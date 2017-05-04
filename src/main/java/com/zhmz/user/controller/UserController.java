@@ -23,8 +23,7 @@ class UserController {
 
 	@GetMapping("/")
 	String index() {
-		// return "user/list";
-		return "user/data";
+		return "user/list";
 	}
 
     @ResponseBody
