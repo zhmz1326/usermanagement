@@ -23,9 +23,9 @@ import org.springframework.util.ClassUtils;
 
 import com.zhmz.Application;
 
-@Configuration
-@EnableTransactionManagement
-@EnableJpaRepositories(basePackageClasses = Application.class)
+//@Configuration
+//@EnableTransactionManagement
+//@EnableJpaRepositories(basePackageClasses = Application.class)
 class JpaConfig {
 
     @Value("${dataSource.driverClassName}")

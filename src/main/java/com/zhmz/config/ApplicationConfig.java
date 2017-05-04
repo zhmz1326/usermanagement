@@ -1,5 +1,7 @@
 package com.zhmz.config;
 
+import com.zhmz.init.InitDataListener;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -19,4 +21,8 @@ class ApplicationConfig {
         return new PropertySourcesPlaceholderConfigurer();
     }
 
+    @Bean
+    public static InitDataListener initDataListener() {
+        return new InitDataListener();
+    }
 }
