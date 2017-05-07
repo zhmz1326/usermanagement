@@ -16,3 +16,9 @@ mvn clean compile tomcat7:run
 `
 
 And access http://localhost:8080
+
+# Test
+
+`
+mvn test
+`
