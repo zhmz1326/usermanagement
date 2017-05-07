@@ -9,7 +9,6 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
 @PropertySource("classpath:application.properties")
-//@ComponentScan(basePackageClasses = Application.class)
 @ComponentScan(basePackages = "com.zhmz")
 class ApplicationConfig {
 
