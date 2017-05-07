@@ -29,5 +29,4 @@ public abstract class WebAppConfigurationAware {
     public void before() {
         this.mockMvc = webAppContextSetup(this.wac).build();
     }
-
 }
