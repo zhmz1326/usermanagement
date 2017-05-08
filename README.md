@@ -20,5 +20,5 @@ And access http://localhost:8080
 # Test
 
 `
-mvn test
+mvn clean test
 `
