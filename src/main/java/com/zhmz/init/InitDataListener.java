@@ -13,6 +13,7 @@ import org.springframework.web.context.ServletContextAware;
 
 import javax.servlet.ServletContext;
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +31,13 @@ public class InitDataListener implements InitializingBean, ServletContextAware {
 
     @Override
     public void afterPropertiesSet() throws Exception {
+        readInitialUserData();
+    }
+
+    /*
+     * 从初始数据文件中读取初始用户数据,并保持到内存中(userService实例的类变量中)
+     */
+    private void readInitialUserData() throws IOException {
         URL url = servletContext.getResource(location);
 
         URLReader ur = new URLReader(url);
